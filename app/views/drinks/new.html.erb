@@ -1,0 +1,12 @@
+<div class="container">
+
+<%= simple_form_for(@drink) do |f| %>
+  <%= f.input :name, input_html: {class: "background-transparent"} %>
+  <%= f.input :description, input_html: {class: "background-transparent"} %>
+  <%= f.input :category, collection: Drink::CATEGORIES, input_html: {class: "background-transparent"} %>
+  <%= f.input :price, input_html: {class: "background-transparent"} %>
+  <%= f.input :quantity, input_html: {class: "background-transparent"} %>
+  <%= f.input :size, collection: Drink::SIZES, input_html: {class: "background-transparent"} %>
+  <%= f.submit %>
+<% end %>
+</div>

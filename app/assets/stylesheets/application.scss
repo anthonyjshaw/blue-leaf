@@ -11,3 +11,52 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+.border-none {
+  border: none;
+}
+
+
+.flex-wrapper {
+  display: flex;
+  min-height: 95vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.background-transparent {
+  background-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: black;
+  transition: 0.5s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #734046;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+}
+.flex-item-1 {
+  flex: 1 1 0;
+
+}
+
+.flex-item-2 {
+  flex: 1 1 0;
+
+}
+

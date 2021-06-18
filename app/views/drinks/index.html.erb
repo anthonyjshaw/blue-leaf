@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+    <h3>Menu</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+    <p><strong>Drinks</strong></p>
+      <hr>
+      </div>
+  </div>
+    <div class="row">
+    <% @categories.each do |category| %>
+    <div class="col-md-6 col-lg-6 col-sm-12 text-center">
+      <%= link_to category_path(category.downcase) do %>
+      <%= image_tag "#{category.downcase}.jpg", alt: "alttext" , class: 'rounded-img'%>
+      <p><%= category %></p>
+      <% end %>
+    </div>
+    <% end %>
+  </div>
+</div>

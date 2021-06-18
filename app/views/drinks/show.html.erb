@@ -1,0 +1,14 @@
+
+<div class="container">
+
+<nav aria-label="breadcrumb ">
+  <ol class="breadcrumb background-transparent">
+    <li class="breadcrumb-item"><%= link_to "Menu", menu_path %></li>
+    <li class="breadcrumb-item"><%= link_to @drink.category, category_path(@drink.category) %></li>
+    <li class="breadcrumb-item active" aria-current="page"><%= @drink.name %></li>
+  </ol>
+  <h1><%= @drink.name %></h1>
+  <%= image_tag @drink.name.downcase, alt: "alttext", class: "img-fluid" %>
+  <p>£<%= @drink.price %></p>
+  <hr>
+</div>

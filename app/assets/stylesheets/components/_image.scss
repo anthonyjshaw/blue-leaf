@@ -1,0 +1,40 @@
+.rounded-img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  // object-position: 0px -41px;
+}
+
+@media (max-width: 575px) {
+  .rounded-img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  // object-position: 0px -41px;
+}
+
+ }
+
+
+@media (min-width: 576px) {
+  .rounded-img {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  // object-position: 0px -41px;
+}
+}
+
+
+@media (min-width: 992px) {
+  .rounded-img {
+    border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  // object-position: 0px -41px;
+  }
+}
